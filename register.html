@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/build/css/main.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <title>Register</title>
+</head>
+<body>
+    
+<!-- Register-->
+
+<section class="bg-white">
+  <div class="lg:grid lg:min-h-screen lg:grid-cols-12">
+    <section class="relative flex h-24 items-end bg-gray-900 lg:col-span-5 lg:h-full xl:col-span-6">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="subarashii/ITSME.jpeg" alt="Foto 1" class=" h-full w-full object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="subarashii/H-FRONT.jpg" alt="Foto 2" class=" h-full w-full object-cover" />
+          </div>
+          <div class="swiper-slide">
+            <img src="subarashii/KANZ.jpg" alt="Foto 3" class="h-full w-full object-cover" />
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 5000, // Autoslide setiap 3 detik
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
+
+  
+      <main
+        class="flex items-center justify-center px-8 py-4 sm:px-12 lg:col-span-7 lg:px-16 lg:py-8 xl:col-span-6"
+      >
+        <div class="max-w-xl lg:max-w-3xl">
+          <div class="relative -mt-16 block lg:hidden">
+            <a
+              class="inline-flex size-16 items-center justify-center rounded-full bg-white text-blue-600 sm:size-20"
+              href="#"
+            >
+            </a>
+          </div>
+
+          <a class="block text-teal-300" href="index.html">
+            <span class="sr-only">Home</span>
+            <img
+                src="subarashii/logo subarashii blck.jpg"
+                alt=""
+                class="flex h-16 w-45 object-cover mx-auto"
+              />
+          </a>
+
+          <h1 class="mt-2 text-2xl font-bold text-gray-900 text-center text-2xl md:text-3xl">
+            Selamat Datang di <i>Subarashii</i>
+          </h1>
+          
+          <h3 class="font-bold text-black text-center text-1xl md:text-2xl">
+            Silahkan Buat Akun Anda
+          </h3>
+          <form action="#" class="mt-8 grid grid-cols-6 gap-4 p-2">
+            <div class="col-span-6 sm:col-span-3">
+              <label for="FirstName" class="block text-sm font-medium text-gray-700">
+                Nama Depan
+              </label>
+  
+              <input
+                type="text"
+                id="FirstName"
+                name="first_name"
+                class="mt-1 w-full p-2 rounded-md border border-gray-300 bg-white text-sm text-gray-700 shadow"
+              />
+            </div>
+  
+            <div class="col-span-6 sm:col-span-3">
+              <label for="LastName" class="block text-sm font-medium text-gray-700">
+                Nama Belakang
+              </label>
+  
+              <input
+                type="text"
+                id="LastName"
+                name="last_name"
+                class="mt-1 w-full p-2 rounded-md border border-gray-300 bg-white text-sm text-gray-700 shadow"
+              />
+            </div>
+  
+            <div class="col-span-6">
+              <label for="Email" class="block text-sm font-medium text-gray-700"> Email </label>
+  
+              <input
+                type="email"
+                id="Email"
+                name="email"
+                class="mt-1 w-full p-2 rounded-md border border-gray-300 bg-white text-sm text-gray-700 shadow"
+              />
+            </div>
+  
+            <div class="col-span-6 sm:col-span-3">
+              <label for="Password" class="block text-sm font-medium text-gray-700"> Password </label>
+  
+              <input
+                type="password"
+                id="Password"
+                name="password"
+                class="mt-1 w-full p-2 rounded-md border border-gray-300 bg-white text-sm text-gray-700 shadow"
+              />
+            </div>
+  
+            <div class="col-span-6 sm:col-span-3">
+              <label for="PasswordConfirmation" class="block text-sm font-medium text-gray-700">
+                Konfirmasi Password
+              </label>
+  
+              <input
+                type="password"
+                id="PasswordConfirmation"
+                name="password_confirmation"
+                class="mt-1 w-full p-2 rounded-md border border-gray-300 bg-white text-sm text-gray-700 shadow"
+              />
+            </div>
+  
+            <div class="col-span-6">
+              <label for="MarketingAccept" class="flex gap-4">
+                <input
+                  type="checkbox"
+                  id="MarketingAccept"
+                  name="marketing_accept"
+                  class="size-5 rounded-md border-gray-200 bg-white shadow-sm"
+                />
+  
+                <span class="text-sm text-gray-700">
+                  Saya ingin menerima update terbaru produk & catalog melalui alamat email.
+                </span>
+              </label>
+            </div>
+  
+            <div class="col-span-6">
+              <p class="text-sm text-gray-500">
+                Dengan mendaftar, saya menyetujui
+                <a href="#" class="text-gray-700 underline"> Syarat & Ketentuan,</a>
+                <a href="#" class="text-gray-700 underline">  Kebijakan Privasi dan Disclaimer</a>.
+              </p>
+            </div>
+  
+            <div class="col-span-6 sm:flex sm:items-center sm:gap-4">
+              <button
+                class="button rounded bg-black px-5 py-3 text-sm font-medium text-white
+                transition hover:bg-gray-900 hover:text-yellow-400 focus:outline-none focus:ring active:text-white"
+              >
+                Buat Akun
+              </button>
+  
+              <p class="mt-4 text-sm text-gray-500 sm:mt-0">
+                Sudah punya akun?
+                <a href="login.html" class="text-gray-700 underline">Masuk</a>.
+              </p>
+            </div>
+          </form>
+        </div>
+      </main>
+    </div>
+  </section>
+
+  <!-- Register -->
+
+</body>
+</html>
